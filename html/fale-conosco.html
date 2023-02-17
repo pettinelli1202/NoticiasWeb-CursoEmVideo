@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Fale-Conosco</title>
+</head>
+
+<script src="/js/calcular.js"></script>
+<script src="/js/mudarFoto.js"></script>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+
+                <h1>GOOGLE GLASS</h1>
+
+                <h2>Google Glass - A revolução do Google está chegando</h2>
+                <img id="icone" src="/media/img/glass-logo-med.jpg">
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudarFoto('/media/botao-home.png')" onmouseout="mudarFoto('/media/support.png')">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li onmouseover="mudarFoto('/media/specification.png')" onmouseout="mudarFoto('/media/support.png')">
+                            <a href="/html/especificacoes.html">Especificações</a>
+                        </li>
+                        <li onmouseover="mudarFoto('/media/img/image-gallery.png')" onmouseout="mudarFoto('/media/support.png')">
+                            <a href="/html/fotos.html">Fotos</a>
+                        </li>
+                        <li onmouseover="mudarFoto('/media/multimidia.png')" onmouseout="mudarFoto('/media/support.png')">
+                            <a href="/html/multimidia.html">Multimídia</a>
+                        </li>
+                        <li onmouseover="mudarFoto('/media/support.png')" onmouseout="mudarFoto('/media/support.png')">
+                            <a href="/html/fale-conosco.html">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+
+        <h5>Google Glass > Fale-Conosco</h5>
+        <h5>por Lucas Pettinelli, Atualizado em 01/01/2023.</h5>
+        <h3>Contato Formulário de Contato</h3>
+
+        </hgroup>
+
+        <form method="post" id="formContato" action="emailto@yahoo.com.br" oninput="calcular_total();">
+            <fieldset id="usuario">
+                <legend>
+                    Identificação do Usuário
+                </legend>
+
+                <p><label for="campoNome">Nome: </label>
+                    <input type="text" name="textNome" id="campoNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+
+                <p><label for="campoSenha">Senha: </label>
+                    <input type="password" name="textSenha" id="campoSenha" size="20" maxlength="10" placeholder="Senha de 10 caracteres"></p>
+
+                <p><label for="campoEmail">E-mail: </label>
+                    <input type="email" name="textEmail" id="campoEmail" size="20" maxlength="40" placeholder="E-mail principal"></p>
+
+                <fieldset id="sexo">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="textSexo" id="campoMasc">
+                    <label for="campoMasc">Masculino</label><br>
+                    <input type="radio" name="textSexo" id="campoFem">
+                    <label for="campoFem">Feminino</label>
+
+                </fieldset>
+                <p><label for="campoNasc">Data de Nascimento: </label><input type="date" name="textNasc" id="campoNasc"></p>
+            </fieldset>
+
+
+            <fieldset id="endereco">
+                <legend>
+                    Endereço do Usuário
+                </legend>
+
+                <p><label for="campoRua">Endereço: </label>
+                    <input type="text" name="textRua" id="campoRua" size="30" maxlength="50" placeholder="Rua, Avenida, Trav..."></p>
+
+                <p><label for="campoNum">Número: </label>
+                    <input type="number" name="textNum" id="campoNum" min="0" max="99999"></p>
+
+
+                <p><label for="campoCidade">Cidade: </label>
+                    <input type="text" name="textCidade" id="campoCidade" size="30" maxlength="30" placeholder="Cidade que reside"></p>
+
+                <p><label for="campoEstado">Estado: </label>
+                    <select type="text" name="textEstado" id="campoEstado" placeholder="Estado que reside"></p>
+                    <option selected></option>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option>Goiás</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte">
+                        <option>Acre</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Pará</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Tocantins</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option>Bahia</option>
+                        <option>Ceará</option>                  
+                        <option>Maranhão</option>
+                        <option>Alagoas</option>
+                        <option>Paraíba</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Sergipe</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option>Paraná</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Santa Catarina</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option>Espírito Santo</option>
+                        <option>Minas Gerais</option>
+                        <option>Rio de Janeiro</option>
+                        <option>São Paulo</option>
+                    </optgroup>
+                    </select>
+
+                    <p><label for="campoPais">País: </label>
+                        <input type="text" name="textPais" id="campoPais" size="33" maxlength="30" placeholder="País que reside">
+                    </p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>
+                    Mensagem do Usuário
+                </legend>
+                <p><label for="campoUrgencia">Grau de Urgência: </label> 0
+                    <input type="range" name="textUrgencia" id="campoUrgencia" value="2" min="0" max="10" step="2">10</p>
+
+                <p><label for="campoMensagem">Mensagem:</label>
+                    <textarea name="textMensagem" id="campoMensagem" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>
+                    Quero um Google Glass
+                </legend>
+
+                <p><label for="campoPedido">Gostaria de adquirir um Google Glass quando disponível: </label>
+                    <input type="checkbox" name="textPedido" id="campoPedido"></p>
+
+                <p><label for="campoCor">Cor: </label>
+                    <input type="color" name="textCor" id=campoCor value="#ffffff">
+                </p>
+
+                <p><label for="campoQuantidade">Quantidade:</label>
+                    <input type="number" name="textQuantidade" id="campoQuantidade" min="0" max="5" value="0">
+                </p>
+
+                <p><label for="campoPreco">Preço Total: R$ </label>
+                    <input type="text" name="textPreco" id="campoPreco" placeholder="Total a pagar" readonly>
+                </p>
+            </fieldset>
+
+            <input id="botao-enviar" type="submit" value="Enviar">
+        </form>
+        </section>
+        </article>
+
+        <br>
+        <footer id="rodape">
+            <p>Desenvolvido por Lucas Pettinelli - 2023&nbsp; &copy; <br>
+                <br><a target="_blank" href="https://www.linkedin.com/in/lucas-pettinelli/">Linkedin</a> &nbsp;|&nbsp;
+                <a target="_blank" href="https://github.com/pettinelli1202">Github</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,55 @@
+form {
+    width: 700px;
+    margin: auto;
+}
+
+input,
+textarea {
+    font-size: 13pt;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgb(239, 239, 239);
+}
+
+h3 {
+    background-color: #0075ff;
+    color: white;
+    font-size: 13pt;
+    padding: 5px 10px;
+    margin-top: 0px;
+}
+
+legend {
+    color: white;
+    background-color: #0075ff;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+fieldset {
+    border-color: whitesmoke;
+    margin: 20px;
+}
+
+fieldset#mensagem textarea {
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+input#botao-enviar {
+    width: 100px;
+    border-radius: 8px;
+    background-color: #0075ff;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input#botao-enviar:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    background-color: #0068df;
+}
