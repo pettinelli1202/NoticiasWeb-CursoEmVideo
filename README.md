@@ -6,8 +6,7 @@ O projeto realiza uma página de notícias web onde apresenta o produto da googl
 ![Desktop](https://uploaddeimagens.com.br/images/004/361/002/full/ggweb3_%281%29.png?1676937766)
 
 # Tecnologias aplicadas
-## Back-end
-➤ Javascript
+
 ## Front-end 
 ➤ Html, Css
 ➤ Javascript
